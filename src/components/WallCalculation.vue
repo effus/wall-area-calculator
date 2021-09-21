@@ -93,20 +93,20 @@
             </div>
 
             <div class="row">
-                <div class="col s6">
+                <div class="col s10 m6">
                     <p class="result-line left">Площадь стен</p>
                 </div>
-                <div class="col s6">
+                <div class="col s2 m6">
                     <div class="result-line left">
                         <span class="value">{{result.walls}}</span> м<span class="super">2</span>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col s6">
+                <div class="col s10 m6">
                     <p class="result-line left">Площадь пола/потолка</p>
                 </div>
-                <div class="col s6">
+                <div class="col s2 m6">
                     <div class="result-line left">
                         <span class="value">{{result.floor}}</span> м<span class="super">2</span>
                     </div>
@@ -114,10 +114,10 @@
             </div>
 
             <div class="row">
-                <div class="col s6">
+                <div class="col s10 m6">
                     <p class="result-line left">Исключенная площадь</p>
                 </div>
-                <div class="col s6">
+                <div class="col s2 m6">
                     <div class="result-line left">
                         <span class="value">{{result.excluded}}</span> м<span class="super">2</span>
                     </div>
@@ -125,10 +125,10 @@
             </div>
 
             <div class="row">
-                <div class="col s6">
+                <div class="col s10 m6">
                     <p class="result-line left">Объем помещения</p>
                 </div>
-                <div class="col s6">
+                <div class="col s2 m6">
                     <div class="result-line left">
                         <span class="value">{{result.volume}}</span> м<span class="super">3</span>
                     </div>

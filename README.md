@@ -1,4 +1,8 @@
-# wall-area-calculator
+# Полезные расчеты при ремонте
+
+## Расчет стен в комнате
+
+![Wall calculator](src/assets/sample1.png)
 
 ## Project setup
 ```
@@ -14,6 +18,3 @@ yarn serve
 ```
 yarn build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
