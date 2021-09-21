@@ -2,6 +2,10 @@
 
 ## Расчет стен в комнате
 
+- Vue.js
+- Materialize.css
+- Material Icons
+
 ![Wall calculator](src/assets/sample1.png)
 
 ## Project setup
