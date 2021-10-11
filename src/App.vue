@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <home-screen v-if="flagHomeScreen" v-on:new-calc="onNewCalc"></home-screen>
+    <home-screen v-if="flagHomeScreen" v-on:new-calc="onNewCalc" v-on:wp-calc="onWPCalc"></home-screen>
     <wall-calculation v-if="flagWallCalculation" v-on:back="onBackHome"></wall-calculation>
+    <wallpaper-calculation v-if="flagWallpaperCalc" v-on:back="onBackHome"></wallpaper-calculation>
   </div>
 </template>
 
@@ -9,26 +10,36 @@
 
 import HomeScreen from './components/HomeScreen.vue';
 import WallCalculation from './components/WallCalculation.vue';
+import WallpaperCalculation from './components/WallpaperCalculation.vue';
 
 export default {
   name: 'App',
   components: {
-    HomeScreen, WallCalculation
+    HomeScreen, WallCalculation,
+    WallpaperCalculation
   },
   data() {
     return {
       flagHomeScreen: true,
       flagWallCalculation: false,
+      flagWallpaperCalc: false
     }
   },
   methods: {
     onBackHome() {
       this.flagHomeScreen = true;
       this.flagWallCalculation = false;
+      this.flagWallpaperCalc = false;    
     },
     onNewCalc() {
       this.flagHomeScreen = false;
       this.flagWallCalculation = true;
+      this.flagWallpaperCalc = false;
+    },
+    onWPCalc() {
+      this.flagHomeScreen = false;
+      this.flagWallCalculation = false;
+      this.flagWallpaperCalc = true;
     }
   }
 };
